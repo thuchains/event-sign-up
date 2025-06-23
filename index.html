@@ -73,26 +73,34 @@
                     <option value="">Other</option>
                 </select>
             </div>
-            <p>Would you like to be notified about future events?</p>
-            <input type="checkbox" name="newsletter-email" id="newsletter-email" checked>
-            <label for="newsletter-email">Email</label>
-            <input type="checkbox" name="newsletter-text" id="newsletter-text" checked>
-            <label for="newsletter-text">Text</label>
-            <input type="checkbox" name="newsletter-no" id="newsletter-no">
-            <label for="newsletter-no">I do not want to receive notifications</label>
+            <div class="container-notification">
+                <p>Would you like to be notified about future events?</p>
+                <input type="checkbox" name="newsletter-email" id="newsletter-email" checked>
+                <label for="newsletter-email">Email</label>
+                <input type="checkbox" name="newsletter-text" id="newsletter-text" checked>
+                <label for="newsletter-text">Text</label>
+                <input type="checkbox" name="newsletter-no" id="newsletter-no">
+                <label for="newsletter-no">I do not want to receive notifications</label>
+            </div>
         </section>
         <section>
-            <p>By participating in this run club, I acknowledge that running and related activities involve inherent risks, including the potential for injury, illness, and property damage. I voluntarily assume full responsibility for any risks or injuries that may occur as a result of my participation. I hereby release and hold harmless the organizers, sponsors, volunteers, and affiliated parties from any and all claims, liabilities, or demands arising from or related to my involvement in run club activities.</p>
-            <input type="radio" name="liability-waiver" id="liability-waiver-agree" checked>
-            <label for="liability-waiver-agree">Agree</label>
-            <input type="radio" name="liability-waiver" id="liability-waiver-decline">
-            <label for="liability-waiver-decline">Decline</label>
+            <div class="container-liability-waiver">
+                <p>By participating in this run club, I acknowledge that running and related activities involve inherent risks, including the potential for injury, illness, and property damage. I voluntarily assume full responsibility for any risks or injuries that may occur as a result of my participation. I hereby release and hold harmless the organizers, sponsors, volunteers, and affiliated parties from any and all claims, liabilities, or demands arising from or related to my involvement in run club activities.</p>
+                <input type="radio" name="liability-waiver" id="liability-waiver-agree" checked>
+                <label for="liability-waiver-agree">Agree</label>
+                <div class="container-liability-waiver-decline">
+                    <input type="radio" name="liability-waiver" id="liability-waiver-decline">
+                    <label for="liability-waiver-decline">Decline</label>
+                </div>
+            </div>
         </section>
 
-        <button type="submit" class="submit">
-            <a href="/confirmation_page.html" target="_blank">Submit</a>
-        </button>
-        <button type="reset" class="clear">Clear Form</button>
+        <div class="container-submit-clear">
+            <button type="submit">
+                <a href="/confirmation_page.html" target="_blank">Submit</a>
+            </button>
+            <button type="reset" class="clear">Clear Form</button>
+        </div>
     </main>
 
     <footer>

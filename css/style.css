@@ -61,11 +61,46 @@ h3 {
     width: 30vw;
     height: 3vh;
     border-radius: 20px;
+    color: rgb(98, 54, 8);
 }
 
-.container-firstname, .container-lastname, .container-email, .container-birthdate, .container-phone-number {
+.container-firstname, .container-lastname, .container-email, .container-birthdate, .container-phone-number, .container-know-current-member, .container-hear-about-us, .container-notification, .container-liability-waiver {
     padding: 2vh 3vw 2vh 3vw;
     letter-spacing: 0.3vw;
+}
+
+#know-current-member {
+    width: 50vw;
+    height: 10vh;
+    display: block;
+    border-radius: 20px;
+    color: rgb(98, 54, 8);
+}
+
+input:hover, textarea:hover, option:hover, select:hover {
+    border-color: rgb(99, 7, 7);
+}
+
+#hear-about-us {
+    width: 20vw;
+    height: 4vh;
+    border-radius: 20px;
+    color: rgb(98, 54, 8);
+}
+
+.container-liability-waiver {
+    line-height: 4vh;
+    padding: 5vh 0 5vh 3vw;
+}
+
+.container-liability-waiver-decline {
+    display: block;
+}
+
+.container-submit-clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-map {
@@ -90,4 +125,3 @@ h4 {
     width: 50px;
     height: 50px;
 }
-
