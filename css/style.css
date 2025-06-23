@@ -4,12 +4,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
+    color: rgb(250, 240, 232);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-h1, h3 {
+h1, h3, #moto {
     text-align: center;
-    color: white;
+    letter-spacing: 0.3vw;
 }
 
 .logo {
@@ -26,8 +28,27 @@ h3 {
     font-size: 5vh;
 }
 
+#map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0 5vh 0;
+    margin-left: 2vh;
+}
+
+#schedule {
+    font-size: 3vh;
+    display: block;
+    align-items: center;
+    line-height: 7vh;
+}
+
 #moto {
     font-size: 3vh;
+    letter-spacing: 0.2vw;
+    line-height: 7vh;
+    padding: 10vh;
+    font-family: cursive;
 }
 
 .container {
@@ -38,8 +59,14 @@ h3 {
     flex: 1;
 }
 
-.container-links {
+h4 {
+    padding: 3vh 0 1vh 0;
+}
+
+.container-links, h4 {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .shop_icon {
