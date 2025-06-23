@@ -20,7 +20,7 @@
             <p id="moto">At Club Balboa, we prioritize community—rooted in the spirit of surrounding yourself with ambitious young entrepreneurs and like-minded individuals. Club Balboa embodies a holistic approach to health and wellness, whether through Balboa Run Club or our soon-to-launch Social and Racing Clubs. There's always a place for you in the Club. <br>Welcome to Club Balboa.</p>
         </div>
         
-        <div class="container">
+        <div class="container-map">
             <div id="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3322.784326558422!2d-117.891!3d33.6109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDM2JzM5LjIiTiAxMTfCsDUzJzI3LjYiVw!5e0!3m2!1sen!2sus!4v1750545776439!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -34,31 +34,45 @@
             </div>
         </div>
 
-        <section id="personal_info">
-            <label for="firstname">First Name</label>     
-            <input type="text" name="firstname" id="firstname" required>
-            <label for="lastname">Last Name</label>
-            <input type="text" name="lastname" id="lastname" required>
-            <label for="birthdate">Date of Birth</label>
-            <input type="date" name="birthdate" id="birthdate">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
-            <label for="phone-number">Phone Number</label>
-            <input type="text" name="phone-number" id="phone-number">
+        <section id="personal-info">
+            <div class="container-firstname">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" required>
+            </div>
+                <div class="container-lastname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+            <div class="container-birthdate">
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" name="birthdate" id="birthdate">
+            </div>
+            <div class="container-email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="container-phone-number">
+                <label for="phone-number">Phone Number</label>
+                <input type="text" name="phone-number" id="phone-number">
+            </div>
         </section>
 
         <section>
-            <label for="know-current-member">Do you know any current Members?</label>
-            <textarea name="know-current-member" id="know-current-member" placeholder="First and Last Name"></textarea>
-            <label for="hear-about-us">How did you hear about us?</label>
-            <select name="hear-about-us" id="hear-about-us">
-                <option value="">Select one</option>
-                <option value="">Instagram</option>
-                <option value="">Tik Tok</option>
-                <option value="">Strava</option>
-                <option value="">Online Search</option>
-                <option value="">Other</option>
-            </select>
+            <div class="container-know-current-member">
+                <label for="know-current-member">Do you know any current Members?</label>
+                <textarea name="know-current-member" id="know-current-member" placeholder="First and Last Name"></textarea>
+            </div>
+            <div class="container-hear-about-us">
+                <label for="hear-about-us">How did you hear about us?</label>
+                <select name="hear-about-us" id="hear-about-us">
+                    <option value="">Select one</option>
+                    <option value="">Instagram</option>
+                    <option value="">Tik Tok</option>
+                    <option value="">Strava</option>
+                    <option value="">Online Search</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
             <p>Would you like to be notified about future events?</p>
             <input type="checkbox" name="newsletter-email" id="newsletter-email" checked>
             <label for="newsletter-email">Email</label>
@@ -75,10 +89,10 @@
             <label for="liability-waiver-decline">Decline</label>
         </section>
 
-        <button type="submit">
+        <button type="submit" class="submit">
             <a href="/confirmation_page.html" target="_blank">Submit</a>
         </button>
-        <button type="reset">Clear Form</button>
+        <button type="reset" class="clear">Clear Form</button>
     </main>
 
     <footer>
