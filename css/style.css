@@ -67,6 +67,7 @@ h3 {
     display: block;
     border-radius: 7px;
     color: rgb(98, 54, 8);
+    margin-top: 2vh;
 }
 
 .firstname, .lastname, .email, .birthdate, .phone-number, .know-current-member, .hear-about-us, .notification, .liability-waiver {
