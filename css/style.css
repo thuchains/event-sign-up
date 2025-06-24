@@ -32,17 +32,21 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2vh 0 5vh 0;
-    margin-left: 2vh;
+    margin: 2vh 0 5vh 2vh;
 }
 
 #schedule {
     font-size: 2.5vh;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
     line-height: 5vh;
     letter-spacing: 0.15vw;
+    margin-right: 2vh;
+}
+
+.content {
+    border: 3px solid rgb(241, 218, 203);
+    border-radius: 15px;
+    position: relative;
+    margin: 5rem 25rem;
 }
 
 #moto {
@@ -54,31 +58,39 @@ h3 {
 }
 
 #personal-info {
-    padding: 5vh 0.3vh 3vh 0.3vh;
+    margin: 5vh 0.3vh 3vh 0.3vh;
 }
 
 #firstname, #lastname, #email, #phone-number, #birthdate {
-    width: 30vw;
+    width: 20vw;
     height: 3vh;
-    border-radius: 20px;
+    display: block;
+    border-radius: 7px;
     color: rgb(98, 54, 8);
 }
 
-.container-firstname, .container-lastname, .container-email, .container-birthdate, .container-phone-number, .container-know-current-member, .container-hear-about-us, .container-notification, .container-liability-waiver {
-    padding: 2vh 3vw 2vh 3vw;
+.firstname, .lastname, .email, .birthdate, .phone-number, .know-current-member, .hear-about-us, .notification, .liability-waiver {
+    margin: 4vh 3vw 2vh 3vw;
     letter-spacing: 0.3vw;
+    font-size: 1.2rem;
+}
+
+#firstname, #lastname, #email, #birthdate, #phone-number, #know-current-member, #hear-about-us, #notification, #liability-waiver, .submit, .clear {
+    background-color: rgb(189, 177, 172);
 }
 
 #know-current-member {
-    width: 50vw;
+    width: 30rem;
     height: 10vh;
     display: block;
-    border-radius: 20px;
+    border-radius: 10px;
     color: rgb(98, 54, 8);
+    margin-top: 2vh;
 }
 
-input:hover, textarea:hover, option:hover, select:hover {
-    border-color: rgb(99, 7, 7);
+input:hover, textarea:hover, option:hover, select:hover, button:hover {
+    border-color: rgb(93, 78, 74);
+    border-width: 0.2rem;
 }
 
 #hear-about-us {
@@ -88,22 +100,36 @@ input:hover, textarea:hover, option:hover, select:hover {
     color: rgb(98, 54, 8);
 }
 
-.container-liability-waiver {
+.liability-waiver {
     line-height: 4vh;
-    padding: 5vh 0 5vh 3vw;
+    margin: 5vh 3vw 5vh 3vw;
+    color: rgb(21, 10, 1);
 }
 
-.container-liability-waiver-decline {
+.liability-waiver-decline {
     display: block;
 }
 
-.container-submit-clear {
+.submit-clear {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container-map {
+.submit, .clear, a {
+    width: 8vw;
+    height: 4vh;
+    border-radius: 25px;
+    color: white;
+    margin-bottom: 5vh;
+}
+
+a:focus, a:active, .submit:focus, .submit:active, .clear:focus, .clear:active {
+    outline: none;
+    text-decoration: none;
+}
+
+.map {
     display: flex;
 }
 
@@ -111,17 +137,21 @@ input:hover, textarea:hover, option:hover, select:hover {
     flex: 1;
 }
 
-h4 {
-    padding: 3vh 0 1vh 0;
+footer {
+    text-align: center;
+    margin-top: 7vh;
 }
 
-.container-links, h4 {
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    margin: 2vh 0 5vh 0;
+    
 }
 
-.shop_icon {
-    width: 50px;
+#shop_icon {
+    width: 50px; 
     height: 50px;
 }

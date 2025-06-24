@@ -20,9 +20,9 @@
             <p id="moto">At Club Balboa, we prioritize community—rooted in the spirit of surrounding yourself with ambitious young entrepreneurs and like-minded individuals. Club Balboa embodies a holistic approach to health and wellness, whether through Balboa Run Club or our soon-to-launch Social and Racing Clubs. There's always a place for you in the Club. <br>Welcome to Club Balboa.</p>
         </div>
         
-        <div class="container-map">
+        <div class="container map">
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3322.784326558422!2d-117.891!3d33.6109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDM2JzM5LjIiTiAxMTfCsDUzJzI3LjYiVw!5e0!3m2!1sen!2sus!4v1750545776439!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3322.784326558422!2d-117.891!3d33.6109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDM2JzM5LjIiTiAxMTfCsDUzJzI3LjYiVw!5e0!3m2!1sen!2sus!4v1750545776439!5m2!1sen!2sus" width="700vw" height= 300vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             
             <div id="schedule">
@@ -34,78 +34,79 @@
             </div>
         </div>
 
-        <section id="personal-info">
-            <div class="container-firstname">
-                <label for="firstname">First Name</label>
-                <input type="text" name="firstname" id="firstname" required>
-            </div>
-                <div class="container-lastname">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname" id="lastname" required>
+        <div class="container content">
+            <section id="personal-info">
+                <div class="container firstname">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" required>
                 </div>
-            <div class="container-birthdate">
-                <label for="birthdate">Date of Birth</label>
-                <input type="date" name="birthdate" id="birthdate">
-            </div>
-            <div class="container-email">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="container-phone-number">
-                <label for="phone-number">Phone Number</label>
-                <input type="text" name="phone-number" id="phone-number">
-            </div>
-        </section>
-
-        <section>
-            <div class="container-know-current-member">
-                <label for="know-current-member">Do you know any current Members?</label>
-                <textarea name="know-current-member" id="know-current-member" placeholder="First and Last Name"></textarea>
-            </div>
-            <div class="container-hear-about-us">
-                <label for="hear-about-us">How did you hear about us?</label>
-                <select name="hear-about-us" id="hear-about-us">
-                    <option value="">Select one</option>
-                    <option value="">Instagram</option>
-                    <option value="">Tik Tok</option>
-                    <option value="">Strava</option>
-                    <option value="">Online Search</option>
-                    <option value="">Other</option>
-                </select>
-            </div>
-            <div class="container-notification">
-                <p>Would you like to be notified about future events?</p>
-                <input type="checkbox" name="newsletter-email" id="newsletter-email" checked>
-                <label for="newsletter-email">Email</label>
-                <input type="checkbox" name="newsletter-text" id="newsletter-text" checked>
-                <label for="newsletter-text">Text</label>
-                <input type="checkbox" name="newsletter-no" id="newsletter-no">
-                <label for="newsletter-no">I do not want to receive notifications</label>
-            </div>
-        </section>
-        <section>
-            <div class="container-liability-waiver">
-                <p>By participating in this run club, I acknowledge that running and related activities involve inherent risks, including the potential for injury, illness, and property damage. I voluntarily assume full responsibility for any risks or injuries that may occur as a result of my participation. I hereby release and hold harmless the organizers, sponsors, volunteers, and affiliated parties from any and all claims, liabilities, or demands arising from or related to my involvement in run club activities.</p>
-                <input type="radio" name="liability-waiver" id="liability-waiver-agree" checked>
-                <label for="liability-waiver-agree">Agree</label>
-                <div class="container-liability-waiver-decline">
-                    <input type="radio" name="liability-waiver" id="liability-waiver-decline">
-                    <label for="liability-waiver-decline">Decline</label>
+                    <div class="container lastname">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                <div class="container birthdate">
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" name="birthdate" id="birthdate">
                 </div>
+                <div class="container email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="container phone-number">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" name="phone-number" id="phone-number">
+                </div>
+            </section>
+            <section>
+                <div class="container know-current-member">
+                    <label for="know-current-member">Do you know any current Members?</label>
+                    <textarea name="know-current-member" id="know-current-member" placeholder="First and Last Name"></textarea>
+                </div>
+                <div class="container hear-about-us">
+                    <label for="hear-about-us">How did you hear about us?</label>
+                    <select name="hear-about-us" id="hear-about-us">
+                        <option value="">Select one</option>
+                        <option value="">Instagram</option>
+                        <option value="">Tik Tok</option>
+                        <option value="">Strava</option>
+                        <option value="">Online Search</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+                <div class="container notification">
+                    <p>Would you like to be notified about future events?</p>
+                    <input type="checkbox" name="newsletter-email" id="newsletter-email" checked>
+                    <label for="newsletter-email">Email</label>
+                    <input type="checkbox" name="newsletter-text" id="newsletter-text" checked>
+                    <label for="newsletter-text">Text</label>
+                    <input type="checkbox" name="newsletter-no" id="newsletter-no">
+                    <label for="newsletter-no">I do not want to receive notifications</label>
+                </div>
+            </section>
+            <section>
+                <div class="container liability-waiver">
+                    <p>By participating in this run club, I acknowledge that running and related activities involve inherent risks, including the potential for injury, illness, and property damage. I voluntarily assume full responsibility for any risks or injuries that may occur as a result of my participation. I hereby release and hold harmless the organizers, sponsors, volunteers, and affiliated parties from any and all claims, liabilities, or demands arising from or related to my involvement in run club activities.</p>
+                    <input type="radio" name="liability-waiver" id="liability-waiver-agree" checked>
+                    <label for="liability-waiver-agree">Agree</label>
+                    <div class="container-liability-waiver-decline">
+                        <input type="radio" name="liability-waiver" id="liability-waiver-decline">
+                        <label for="liability-waiver-decline">Decline</label>
+                    </div>
+                </div>
+            </section>
+            <div class="container submit-clear">
+                <button type="submit" class="submit">
+                    <a href="/confirmation_page.html" target="_blank">Submit</a>
+                </button>
+                <button class="clear" type="reset">Clear Form</button>
             </div>
-        </section>
-
-        <div class="container-submit-clear">
-            <button type="submit">
-                <a href="/confirmation_page.html" target="_blank">Submit</a>
-            </button>
-            <button type="reset" class="clear">Clear Form</button>
         </div>
+
     </main>
 
     <footer>
         <h4>FOLLOW US ON SOCIAL MEDIA</h4>
-        <div class="container-links">
+        <div class="container links">
             <a href="https://www.instagram.com/balboa.runclub/" target="_blank">
                 <img src="images/instagram_icon.png" alt="Link to Balboa Run Club's Instagram">
             </a>
@@ -113,7 +114,7 @@
                 <img src="images/tiktok_icon.png" alt="Link to Balboa Run Club's TikTok">
             </a>
             <a href="https://clubbalboa.shop/" target="_blank">
-                <img class="shop_icon" src="images/shop_icon.png" alt="Link to Club Balboa Shop">
+                <img id="shop_icon" src="images/shop_icon.png" alt="Link to Club Balboa Shop">
             </a>
         </div>
     </footer>
